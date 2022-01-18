@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "C:\\Users\\2200452\\Desktop\\ネット課題\\卒業制作関連ファイル\\ネット用JS？\\public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>COMforTABLE</title>
+    <!--Bootstrapのを使うための設定-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- BootstrapのCSS読み込み -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- BootstrapのJS読み込み -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="check.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1 id="selectedtitle"></h1>
+        <!-- XXXX年XX月を表示-->
+        <h2 id="header"></h2>
+
+        <br /><br />
+
+
+        <!-- ボタンクリックで月を移動
+        <div id="next-prev-button">
+            <button id="prev" onclick="prev()">先月</button>
+            <button id="next" onclick="next()">来月</button>
+        </div> -->
+
+        <!--　カレンダー -->
+        <div id="calendar"></div>
+
+        <div id='timeselector'>
+            <div class='reload' onclick='window.location.reload()'>日付を変更する</div>
+            <br /><br />
+            <label><input type='radio' name='select' value='sted'
+                    onchange='sltradio(this.value)'>終了時間を入力する。</label><br />
+            <label><input type='radio' name='select' value='time' onchange='sltradio(this.value)'>使用時間を入力する。</label>
+
+            <script>
+                let elements = document.getElementsByName('select');
+                let len = elements.length;
+                let checkValue = '';
+
+                for (let i = 0; i < len; i++) {
+                    if (elements.item(i).checked) { //ラジオボタンにチェックが入っているデータを変化させる
+                        checkValue = elements.item(i).value; texts += checkValue + "<br />";
+                    }
+                } </script>
+        </div>
+        <div id="oriz">獣はその獣性ゆえに獣たりえる</div>
+
+
+        <div id="calendar2"></div>
+
+    </div>
+</body>
+
+<!-- list.jsの読込 -->
+<script src="./list.js"></script>
+
+</html>

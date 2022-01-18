@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>COMforTABLE</title>
+    <!--Bootstrapのを使うための設定-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- BootstrapのCSS読み込み -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- BootstrapのJS読み込み -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- list.jsの読込 -->
+    <script src="./list.js"></script>
+
+    <link rel="stylesheet" href="check.css">
+</head>
+
+<body style="padding:2%">
+    <script type="text/javascript">
+        for (var i = 0; i < date.length; i++) {
+            var text = date[i] + "<br>";
+            document.write(date[i] + "<br>");
+            document.write(timest[i] + "～" + timeed[i] + "<br>");
+            document.write("room" + room[i] + "<br>");
+            document.write("<a class='change' href='./home.html' style='text-align: right;'>変更</a>");
+            document.write("<a href='./home.html' class='delete'>取消</a>");
+            document.write("<hr>")
+        }
+    </script>
+</body>
+
+</html>
